@@ -73,6 +73,7 @@ const FEATURED_PROJECTS = [
       "Designed India’s first concept of an “Energy Internet”, enabling SMEs and households to cut energy costs by 10–20% through dynamic pricing and AI-driven IoT control. Mentored by the IIFM Data Science Team, this project is advancing toward pilot deployment in the President of India’s Village Redevelopment Program.",
     tags: ["AI", "Energy-Tech", "IoT", "Hackathon"],
     link: "https://gaia-os-frontend.vercel.app/",
+    ppt: "/files/Srijan_Krishna.pdf",
     image: "/images/gaiaos.png",
     featured: true,
   },
@@ -82,6 +83,7 @@ const FEATURED_PROJECTS = [
       "Created a dual-ledger “UPI for Carbon” prototype aligning with India’s 2070 Net Zero mission. Quantifies carbon output per transaction for industries and consumers; planned for phased national rollout.",
     tags: ["Fintech", "Carbon Finance", "Sustainability"],
     link: "https://green-purchase-hub.vercel.app/",
+    ppt: "/files/TRBSMasterplanfinal.pdf",
     image: "/images/cit-car.png",
     featured: true,
   },
@@ -385,12 +387,9 @@ const FeaturedProjects = () => (
   <Section id="featured-projects" title="Featured Projects" icon={Star}>
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {FEATURED_PROJECTS.map((project, index) => (
-        <a
+        <div
           key={index}
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative overflow-hidden rounded-2xl bg-linear-to-br from-gray-800/50 to-gray-900/50 border border-gray-700/50 hover:border-purple-500/50 transition-all hover:scale-[1.02]"
+          className="group relative overflow-hidden rounded-2xl bg-linear-to-br from-gray-800/50 to-gray-900/50 border border-gray-700/50 hover:border-purple-500/50 transition-all"
         >
           <div className="relative h-48 overflow-hidden">
             <img
@@ -407,7 +406,7 @@ const FeaturedProjects = () => (
             <p className="text-gray-400 mb-4 leading-relaxed">
               {project.description}
             </p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-4">
               {project.tags.map((tag) => (
                 <span
                   key={tag}
@@ -417,8 +416,26 @@ const FeaturedProjects = () => (
                 </span>
               ))}
             </div>
+            <div className="flex gap-2">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 text-center bg-gray-700/50 hover:bg-purple-500/30 border border-gray-600 hover:border-purple-500 px-3 py-2 rounded-lg font-medium text-xs text-gray-300 hover:text-white transition-all backdrop-blur-sm"
+              >
+                Live Demo
+              </a>
+              <a
+                href={project.ppt}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 text-center bg-gray-700/50 hover:bg-blue-500/30 border border-gray-600 hover:border-blue-500 px-3 py-2 rounded-lg font-medium text-xs text-gray-300 hover:text-white transition-all backdrop-blur-sm"
+              >
+                View Idea
+              </a>
+            </div>
           </div>
-        </a>
+        </div>
       ))}
     </div>
   </Section>
