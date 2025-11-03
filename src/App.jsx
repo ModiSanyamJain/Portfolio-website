@@ -82,7 +82,7 @@ const FEATURED_PROJECTS = [
     description:
       "Created a dual-ledger “UPI for Carbon” prototype aligning with India’s 2070 Net Zero mission. Quantifies carbon output per transaction for industries and consumers; planned for phased national rollout.",
     tags: ["Fintech", "Carbon Finance", "Sustainability"],
-    link: "https://cyan-purchase-hub.vercel.app/",
+    link: "https://green-purchase-hub.vercel.app/",
     ppt: "/files/TRBSMasterplanfinal.pdf",
     image: "/images/cit-car.png",
     featured: true,
