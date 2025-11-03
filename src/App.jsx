@@ -34,7 +34,7 @@ const PERSONAL_INFO = {
 
 const ABOUT_DATA = {
   vision:
-    "To leverage LLMs, market research, and automation to create scalable solutions that align technology with sustainability and economic growth. I want to leverage my core strengths, i.e., Analytical Thinking @ Founder Mindset @ Strategic Research @ AI Integration @ Rapid Learning & Startup Agility to grow and succeed in life.",
+    "I’m passionate about leveraging Large Language Models (LLMs), market research, and automation to create scalable, sustainable solutions that bridge technology, sustainability, and economic growth. Guided by my core strengths — Analytical Thinking, a Founder’s Mindset, Strategic Research, AI Integration, Rapid Learning, and Startup Agility — I’m driven to turn bold ideas into impactful realities.",
   bio: "AI-native engineering student with a founder’s mindset and strategic research focus. Experienced in building AI-powered systems that merge innovation with measurable impact—from energy-tech infrastructure to carbon finance platforms. Skilled at leveraging LLMs, market research, and automation to create scalable solutions that align technology with sustainability and economic growth.",
 };
 
@@ -82,18 +82,9 @@ const FEATURED_PROJECTS = [
     description:
       "Created a dual-ledger “UPI for Carbon” prototype aligning with India’s 2070 Net Zero mission. Quantifies carbon output per transaction for industries and consumers; planned for phased national rollout.",
     tags: ["Fintech", "Carbon Finance", "Sustainability"],
-    link: "https://green-purchase-hub.vercel.app/",
+    link: "https://cyan-purchase-hub.vercel.app/",
     ppt: "/files/TRBSMasterplanfinal.pdf",
     image: "/images/cit-car.png",
-    featured: true,
-  },
-  {
-    name: "Research Paper – “Maximizing Agricultural Income via AI in India”",
-    description:
-      "Under Review. Proposed AI + IoT + Blockchain model integrating land-record tokenization, crop analytics, and ML forecasting to build a “Bloomberg Terminal for Agriculture.”",
-    tags: ["AI", "Research", "Agri-Tech", "Blockchain"],
-    link: "#",
-    image: "/images/research-paper.png",
     featured: true,
   },
 ];
@@ -111,6 +102,13 @@ const PROJECTS_DATA = [
     description:
       "Analyzes political-linked land purchases, drone imagery, and geo-signals to identify emerging high-alpha zones.",
     tags: ["AI", "Data Analysis", "Real-Estate"],
+    link: "#",
+  },
+  {
+    name: "Research Paper – “Maximizing Agricultural Income via AI in India”",
+    description:
+      "Under Review. Proposed AI + IoT + Blockchain model integrating land-record tokenization, crop analytics, and ML forecasting to build a “Bloomberg Terminal for Agriculture.”",
+    tags: ["AI", "Research", "Agri-Tech", "Blockchain"],
     link: "#",
   },
 ];
@@ -137,13 +135,13 @@ const ACHIEVEMENTS = [
       "Awarded for the GaiaOS Energy Internet System concept and proof-of-concept.",
     image: "/images/win-srijan.jpg",
     date: "2025",
-    place: "IIFM, Bhopal",
+    place: "IIFM Bhopal",
   },
   {
     title: "Finalist – IIM Ahmedabad & IIFM",
     description:
       "Finalist for AI-driven business and re-branding cases (Marketing Maverick).",
-    image: "/images/iima.png",
+    image: "/images/iima.jpg",
     date: "2025",
     place: "IIM Ahmedabad & IIFM",
   },
@@ -191,10 +189,10 @@ const useSearchFilter = (items, searchTerm) => {
 const Section = ({ id, title, icon: Icon, children }) => (
   <section id={id} className="mb-20 scroll-mt-24">
     <div className="flex items-center gap-3 mb-8">
-      <div className="bg-linear-to-br from-purple-500 to-pink-500 p-3 rounded-xl">
+      <div className="bg-linear-to-br from-cyan-500 to-teal-500 p-3 rounded-xl">
         <Icon className="w-7 h-7 text-white" />
       </div>
-      <h2 className="text-4xl font-bold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+      <h2 className="text-4xl font-bold bg-linear-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
         {title}
       </h2>
     </div>
@@ -204,20 +202,20 @@ const Section = ({ id, title, icon: Icon, children }) => (
 
 const Hero = () => (
   <header className="mb-20 relative">
-    <div className="absolute inset-0 bg-linear-to-br from-purple-500/10 via-pink-500/10 to-blue-500/10 rounded-3xl blur-3xl -z-10"></div>
+    <div className="absolute inset-0 bg-linear-to-br from-cyan-500/10 via-teal-500/10 to-blue-500/10 rounded-3xl blur-3xl -z-10"></div>
 
     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
       <div className="relative">
-        <div className="absolute inset-0 bg-linear-to-br from-purple-500 to-pink-500 rounded-full blur-2xl opacity-50"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-cyan-500 to-teal-500 rounded-full blur-2xl opacity-50"></div>
         <img
           src={PERSONAL_INFO.photo}
           alt={PERSONAL_INFO.name}
-          className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-purple-500/30 shadow-2xl"
+          className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-cyan-500/30 shadow-2xl"
         />
       </div>
 
       <div className="flex-1 text-center md:text-left">
-        <h1 className="text-5xl md:text-7xl font-extrabold bg-linear-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent mb-4">
+        <h1 className="text-5xl md:text-7xl font-extrabold bg-linear-to-r from-cyan-400 via-teal-400 to-blue-400 bg-clip-text text-transparent mb-4">
           {PERSONAL_INFO.name}
         </h1>
         <p className="text-2xl md:text-3xl font-semibold text-gray-300 mb-2">
@@ -228,16 +226,16 @@ const Hero = () => (
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
           <a
             href={`mailto:${PERSONAL_INFO.email}`}
-            className="flex items-center gap-2 px-4 py-2 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg transition-all backdrop-blur-sm border border-gray-700 hover:border-purple-500"
+            className="flex items-center gap-2 px-4 py-2 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg transition-all backdrop-blur-sm border border-gray-700 hover:border-cyan-500"
           >
-            <Email className="w-5 h-5 text-purple-400" />
+            <Email className="w-5 h-5 text-cyan-400" />
             <span className="text-gray-300">{PERSONAL_INFO.email}</span>
           </a>
           <a
             href={`tel:${PERSONAL_INFO.phone}`}
-            className="flex items-center gap-2 px-4 py-2 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg transition-all backdrop-blur-sm border border-gray-700 hover:border-pink-500"
+            className="flex items-center gap-2 px-4 py-2 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg transition-all backdrop-blur-sm border border-gray-700 hover:border-teal-500"
           >
-            <Phone className="w-5 h-5 text-pink-400" />
+            <Phone className="w-5 h-5 text-teal-400" />
             <span className="text-gray-300">{PERSONAL_INFO.phone}</span>
           </a>
         </div>
@@ -247,7 +245,7 @@ const Hero = () => (
             href={PERSONAL_INFO.socials.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg transition-all backdrop-blur-sm border border-gray-700 hover:border-purple-500 hover:scale-110"
+            className="p-3 bg-gray-800/50 hover:bg-gray-700/50 rounded-lg transition-all backdrop-blur-sm border border-gray-700 hover:border-cyan-500 hover:scale-110"
           >
             <GitHub className="w-6 h-6 text-gray-300" />
           </a>
@@ -268,17 +266,17 @@ const Hero = () => (
 const About = () => (
   <Section id="about" title="About" icon={Person}>
     <div className="grid md:grid-cols-2 gap-6">
-      <div className="p-6 bg-linear-to-br from-gray-800/50 to-gray-900/50 rounded-2xl backdrop-blur-sm border border-gray-700/50 hover:border-purple-500/50 transition-all">
+      <div className="p-6 bg-linear-to-br from-gray-800/50 to-gray-900/50 rounded-2xl backdrop-blur-sm border border-gray-700/50 hover:border-cyan-500/50 transition-all">
         <div className="flex items-center gap-2 mb-4">
-          <Visibility className="w-6 h-6 text-purple-400" />
+          <Visibility className="w-6 h-6 text-cyan-400" />
           <h3 className="text-xl font-semibold text-gray-200">My Vision</h3>
         </div>
         <p className="text-gray-400 leading-relaxed">{ABOUT_DATA.vision}</p>
       </div>
 
-      <div className="p-6 bg-linear-to-br from-gray-800/50 to-gray-900/50 rounded-2xl backdrop-blur-sm border border-gray-700/50 hover:border-pink-500/50 transition-all">
+      <div className="p-6 bg-linear-to-br from-gray-800/50 to-gray-900/50 rounded-2xl backdrop-blur-sm border border-gray-700/50 hover:border-teal-500/50 transition-all">
         <div className="flex items-center gap-2 mb-4">
-          <Person className="w-6 h-6 text-pink-400" />
+          <Person className="w-6 h-6 text-teal-400" />
           <h3 className="text-xl font-semibold text-gray-200">
             Professional Summary
           </h3>
@@ -321,7 +319,7 @@ const Skills = ({ searchTerm }) => {
                 {skillsByCategory[category].map((skill) => (
                   <span
                     key={skill.name}
-                    className="px-4 py-2 bg-linear-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-lg text-gray-200 font-medium hover:from-purple-500/30 hover:to-pink-500/30 transition-all hover:scale-105"
+                    className="px-4 py-2 bg-linear-to-r from-cyan-500/20 to-teal-500/20 border border-cyan-500/30 rounded-lg text-gray-200 font-medium hover:from-cyan-500/30 hover:to-teal-500/30 transition-all hover:scale-105"
                   >
                     {skill.name}
                   </span>
@@ -347,12 +345,12 @@ const Skills = ({ searchTerm }) => {
 //           {filteredExperience.map((job, index) => (
 //             <div
 //               key={index}
-//               className="p-6 bg-linear-to-br from-gray-800/50 to-gray-900/50 rounded-2xl backdrop-blur-sm border border-gray-700/50 hover:border-purple-500/50 transition-all hover:scale-[1.02]"
+//               className="p-6 bg-linear-to-br from-gray-800/50 to-gray-900/50 rounded-2xl backdrop-blur-sm border border-gray-700/50 hover:border-cyan-500/50 transition-all hover:scale-[1.02]"
 //             >
 //               <h3 className="text-2xl font-bold text-gray-200 mb-1">
 //                 {job.role}
 //               </h3>
-//               <p className="text-xl font-semibold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
+//               <p className="text-xl font-semibold bg-linear-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent mb-2">
 //                 {job.company}
 //               </p>
 //               <p className="text-sm text-gray-400 mb-4">{job.period}</p>
@@ -385,11 +383,11 @@ const Skills = ({ searchTerm }) => {
 
 const FeaturedProjects = () => (
   <Section id="featured-projects" title="Featured Projects" icon={Star}>
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
       {FEATURED_PROJECTS.map((project, index) => (
         <div
           key={index}
-          className="group relative overflow-hidden rounded-2xl bg-linear-to-br from-gray-800/50 to-gray-900/50 border border-gray-700/50 hover:border-purple-500/50 transition-all"
+          className="group relative overflow-hidden rounded-2xl bg-linear-to-br from-gray-800/50 to-gray-900/50 border border-gray-700/50 hover:border-cyan-500/50 transition-all"
         >
           <div className="relative h-48 overflow-hidden">
             <img
@@ -410,7 +408,7 @@ const FeaturedProjects = () => (
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 bg-linear-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 rounded-full text-xs text-gray-300"
+                  className="px-3 py-1 bg-linear-to-r from-cyan-500/20 to-teal-500/20 border border-cyan-500/30 rounded-full text-xs text-gray-300"
                 >
                   {tag}
                 </span>
@@ -421,7 +419,7 @@ const FeaturedProjects = () => (
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 text-center bg-gray-700/50 hover:bg-purple-500/30 border border-gray-600 hover:border-purple-500 px-3 py-2 rounded-lg font-medium text-xs text-gray-300 hover:text-white transition-all backdrop-blur-sm"
+                className="flex-1 text-center bg-gray-700/50 hover:bg-cyan-500/30 border border-white hover:border-cyan-500 px-3 py-2 rounded-lg font-medium text-xs text-gray-300 hover:text-white transition-all backdrop-blur-sm"
               >
                 Live Demo
               </a>
@@ -429,7 +427,7 @@ const FeaturedProjects = () => (
                 href={project.ppt}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 text-center bg-gray-700/50 hover:bg-blue-500/30 border border-gray-600 hover:border-blue-500 px-3 py-2 rounded-lg font-medium text-xs text-gray-300 hover:text-white transition-all backdrop-blur-sm"
+                className="flex-1 text-center bg-gray-700/50 hover:bg-blue-500/30 border border-white hover:border-blue-500 px-3 py-2 rounded-lg font-medium text-xs text-gray-300 hover:text-white transition-all backdrop-blur-sm"
               >
                 View Idea
               </a>
@@ -454,7 +452,7 @@ const Projects = ({ searchTerm }) => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="block p-6 bg-linear-to-br from-gray-800/50 to-gray-900/50 rounded-2xl backdrop-blur-sm border border-gray-700/50 hover:border-pink-500/50 transition-all hover:scale-[1.02]"
+              className="block p-6 bg-linear-to-br from-gray-800/50 to-gray-900/50 rounded-2xl backdrop-blur-sm border border-gray-700/50 hover:border-teal-500/50 transition-all hover:scale-[1.02]"
             >
               <h3 className="text-xl font-bold text-gray-200 mb-2">
                 {project.name}
@@ -500,7 +498,7 @@ const Achievements = () => (
               <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent opacity-60"></div>
             </div>
           ) : (
-            <div className="h-48 flex items-center justify-center bg-linear-to-br from-purple-500/20 to-pink-500/20">
+            <div className="h-48 flex items-center justify-center bg-linear-to-br from-cyan-500/20 to-teal-500/20">
               <EmojiEvents className="w-12 h-12 text-yellow-400" />
             </div>
           )}
@@ -539,7 +537,7 @@ const Education = ({ searchTerm }) => {
               <h3 className="text-2xl font-bold text-gray-200 mb-1">
                 {edu.degree}
               </h3>
-              <p className="text-xl font-semibold bg-linear-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-2">
+              <p className="text-xl font-semibold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
                 {edu.institution}
               </p>
               <p className="text-sm text-gray-400 mb-3">{edu.period}</p>
@@ -567,7 +565,7 @@ const Contact = () => (
       <div className="flex flex-col sm:flex-row gap-4">
         <a
           href={`mailto:${PERSONAL_INFO.email}`}
-          className="flex-1 text-center bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-6 py-4 rounded-xl font-semibold text-lg text-white transition-all shadow-lg hover:shadow-purple-500/50 hover:scale-105"
+          className="flex-1 text-center bg-linear-to-r from-cyan-600 to-teal-600 hover:from-cyan-700 hover:to-teal-700 px-6 py-4 rounded-xl font-semibold text-lg text-white transition-all shadow-lg hover:shadow-cyan-500/50 hover:scale-105"
         >
           <Email className="w-6 h-6 inline-block mr-2" />
           Email Me
@@ -576,7 +574,7 @@ const Contact = () => (
           href={PERSONAL_INFO.socials.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 text-center bg-linear-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-6 py-4 rounded-xl font-semibold text-lg text-white transition-all shadow-lg hover:shadow-blue-500/50 hover:scale-105"
+          className="flex-1 text-center bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 px-6 py-4 rounded-xl font-semibold text-lg text-white transition-all shadow-lg hover:shadow-blue-500/50 hover:scale-105"
         >
           <LinkedIn className="w-6 h-6 inline-block mr-2" />
           Connect on LinkedIn
@@ -616,7 +614,7 @@ const SearchInput = ({ searchTerm, onSearchChange }) => (
       placeholder="Search portfolio..."
       value={searchTerm}
       onChange={(e) => onSearchChange(e.target.value)}
-      className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-700 bg-gray-800/50 backdrop-blur-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
+      className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-700 bg-gray-800/50 backdrop-blur-sm text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all"
     />
     <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 w-5 h-5" />
   </div>
@@ -645,7 +643,7 @@ const TableOfContents = ({ activeSection, searchTerm, onSearchChange }) => (
                 href={`#${section.id}`}
                 className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium ${
                   isActive
-                    ? "bg-linear-to-r from-purple-500/20 to-pink-500/20 text-purple-300 border border-purple-500/30"
+                    ? "bg-linear-to-r from-cyan-500/20 to-teal-500/20 text-cyan-300 border border-cyan-500/30"
                     : "text-gray-400 hover:bg-gray-800/50 hover:text-gray-200"
                 }`}
               >
@@ -703,7 +701,7 @@ const MobileMenu = ({
 const MobileHeader = ({ onMenuOpen }) => (
   <header className="sticky top-0 z-40 p-4 bg-gray-900/80 backdrop-blur-md shadow-lg lg:hidden border-b border-gray-800">
     <div className="flex justify-between items-center">
-      <h2 className="text-xl font-bold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+      <h2 className="text-xl font-bold bg-linear-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
         {PERSONAL_INFO.name}
       </h2>
       <button
@@ -783,9 +781,9 @@ export default function App() {
     <div className="min-h-screen bg-gray-950 text-gray-100 relative overflow-hidden">
       {/* Animated Background */}
       <div className="fixed inset-0 -z-10">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/30 rounded-full blur-3xl animate-pulse"></div>
         <div
-          className="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-500/30 rounded-full blur-3xl animate-pulse"
+          className="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/30 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
